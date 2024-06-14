@@ -49,7 +49,7 @@ MainSecondTask();
 void MainThirdTask()
 {
     // Задаем произвольную строку
-    string originalString = "Ароза упала на лапу Азора";
+    string originalString = "А роза упала на лапу Азора";
 
     // Удаляем все пробелы и преобразуем строку в нижний регистр
     string processedString = originalString.Replace(" ", "").ToLower();
