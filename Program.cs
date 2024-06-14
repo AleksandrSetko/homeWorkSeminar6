@@ -44,3 +44,29 @@ void MainSecondTask()
 
 MainSecondTask();
 
+// Задача № 3 
+
+void MainThirdTask()
+{
+    // Задаем произвольную строку
+    string originalString = "Ароза упала на лапу Азора";
+
+    // Удаляем все пробелы и преобразуем строку в нижний регистр
+    string processedString = originalString.Replace(" ", "").ToLower();
+
+    // Проверяем, является ли строка палиндромом
+    bool isPalindrome = true;
+    for (int i = 0; i < processedString.Length / 2; i++)
+    {
+        if (processedString[i] != processedString[processedString.Length - i - 1])
+        {
+            isPalindrome = false;
+            break;
+        }
+    }
+
+    // Выводим результат
+    Console.WriteLine($"Строка \"{originalString}\" является палиндромом? {isPalindrome}");
+}
+
+MainThirdTask();
